@@ -82,7 +82,7 @@ In order to run tests from the Command Line, you need to download Maven and set 
 The command to run tests from the Command Line (Terminal) is: `mvn clean test`. 
 You can pass the various arguments 
 
-For Eg: `mvn clean test DbrowserName=Safari deviceType=Mobile`
+For Eg: `mvn clean test -DbrowserName=Safari -DdeviceType=Mobile`
 
 
 ### Reporting
@@ -115,4 +115,3 @@ Report at Scenario level
 
 Report at Step level
 ![Screenshot](https://github.com/bintu27/E-CommerceSite_Test_Java/blob/master/Screenshorts/Steps%20.png)
-
