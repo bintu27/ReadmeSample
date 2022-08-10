@@ -1,10 +1,10 @@
 # SwagLabAutomation
 
 ## About Project
-Purpose of this project is to automate web application "https://www.saucedemo.com/" using Selenium with Java as programming language and  BDD Cucumber framework.
-It generates an HTML report, using extend spark report.
+Purpose of this project is to automate web application "https://www.saucedemo.com/" using Selenium with Java as a programming language and BDD Cucumber framework.
+It generates an HTML report, using extend spark report. Screenshots for both passeda nd failed test cases are attached in report after each step.
 
-It is a maven project, meaning all the dependencies are in the pom.xml file, allowing anyone to easily clone the project on their local. 
+It is a maven project, meaning all the dependencies are in the pom.xml file, allowing anyone to easily install the dependencies of the project on their local. 
 It is a Page Object model framework, using Page Factory to make it simpler and easier to maintain. 
 (Page factory instantiates an instance of the given class and sets a lazy proxy for each of the WebElement and List<WebElement> fields that have been declared).
 
@@ -73,8 +73,8 @@ In order to run tests from the Command Line, you need to download Maven and set 
 
 1. Open the TestRunner java class in the IDE (located here: src/test/java/Runner/TestRunner.java);
 2. Update the 'tags' option with the tag for which tests you want to run (e.g. the tags = `”@Regression or @Smoke”` will run all scenarios
-3. Right click in the Root folder and select Run As TestNG
-4. On the left side of the new popup, select TestNG; or Select root folder
+3. Right click on the root folder and select Run
+4. On the right panel of Run, select Run As TestNG
    **Steps to follow to execute the tests:**
 
 #### Without an IDE via command line
@@ -99,15 +99,15 @@ For Eg: `mvn clean test -DbrowserName=Safari -DdeviceType=Mobile`
         1. Navigate to /src/test/resources/config.properties 
         2. Update browserName=Chrome to browserName=Edge or browserName=Firefox or browserName=Safari
      **OR**
-   2. -DbrowserName=<nameOfBrowser>
+   2. -DbrowserName=<nameOfBrowser> in arguments from command line
 
 **For Cross Device testing**
-   Default device is set as desktop, to update device type use anyone option from below
+   Default device is set as desktop, to update device type use any one option from below:
     1. Update config.properties
         1. Navigate to /src/test/resources/config.properties
         2. Update deviceType=Desktop to deviceType=Mobile or deviceType=Tablet
            **OR**
-    2. -DdeviceType=<typeOfDevice>
+    2. -DdeviceType=<typeOfDevice> in arguments from command line
    
 
 Report at Scenario level
